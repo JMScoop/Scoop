@@ -1,0 +1,9 @@
+{
+  "Surveys": [
+    { "id": 1, "title": "Driving", "author": "JMU" }
+  ],
+  "comments": [
+    { "id": 1, "body": "Rides", "postId": 1 }
+  ],
+  "profile": { "name": "User" }
+}

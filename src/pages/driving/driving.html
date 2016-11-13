@@ -7,12 +7,92 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>driving</ion-title>
+    <ion-title>Post a Ride</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+<ion-list>
+  <ion-item>
+    <ion-label>Leaving from</ion-label>
+    <ion-select [(ngModel)]="leaving">
+      <ion-option value="Sunchase">Sunchase</ion-option>
+      <ion-option value="Copper">Copper</ion-option>
+      <ion-option value="StoneGate">StoneGate</ion-option>
+    </ion-select>
+  </ion-item>
+
+    <ion-item>
+    <ion-label>Destination</ion-label>
+    <ion-select [(ngModel)]="destination">
+      <ion-option value="Festival">Festival</ion-option>
+      <ion-option value="Memorial">Memorial</ion-option>
+      <ion-option value="GraceStreet">Grace Street</ion-option>
+    </ion-select>
+  </ion-item>
+
+<ion-item>
+      <ion-label>Date</ion-label>
+      <ion-select [(ngModel)]="month">
+        <ion-option value="01">January</ion-option>
+        <ion-option value="02">February</ion-option>
+        <ion-option value="03">March</ion-option>
+        <ion-option value="04">April</ion-option>
+        <ion-option value="05">May</ion-option>
+        <ion-option value="06">June</ion-option>
+        <ion-option value="07">July</ion-option>
+        <ion-option value="08">August</ion-option>
+        <ion-option value="09">September</ion-option>
+        <ion-option value="10">October</ion-option>
+        <ion-option value="11">November</ion-option>
+        <ion-option value="12">December</ion-option>
+      </ion-select>
+      <ion-select [(ngModel)]="day">
+        <ion-option>1</ion-option>
+        <ion-option>2</ion-option>
+        <ion-option>3</ion-option>
+        <ion-option>4</ion-option>
+        <ion-option>5</ion-option>
+        <ion-option >6</ion-option>
+        <ion-option>7</ion-option>
+        <ion-option>8</ion-option>
+        <ion-option>9</ion-option>
+        <ion-option>10</ion-option>
+        <ion-option>11</ion-option>
+      </ion-select>
+      <ion-select [(ngModel)]="year">
+        <ion-option>1989</ion-option>
+        <ion-option>1990</ion-option>
+        <ion-option>1991</ion-option>
+        <ion-option>1992</ion-option>
+        <ion-option>1993</ion-option>
+        <ion-option>1994</ion-option>
+        <ion-option>1995</ion-option>
+        <ion-option>1996</ion-option>
+        <ion-option>1997</ion-option>
+        <ion-option>1998</ion-option>
+        <ion-option>1999</ion-option>
+      </ion-select>
+    </ion-item>
+
+      <ion-item>
+    <ion-label>Seats</ion-label>
+    <ion-select [(ngModel)]="Seats">
+      <ion-option value="1">1</ion-option>
+      <ion-option value="2">2</ion-option>
+      <ion-option value="3">3</ion-option>
+      <ion-option value="4">4</ion-option>
+      <ion-option value="5">5</ion-option>
+      <ion-option value="6">6</ion-option>
+      <ion-option value="7">7</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+
 
 </ion-content>
